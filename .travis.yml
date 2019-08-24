@@ -3,7 +3,7 @@ git:
   depth: 1
 env:
   global:
-  - MODULE_NAME=query REPOSITORY_DIR="$TRAVIS_BUILD_DIR" DEPENDENCIES="$TRAVIS_BUILD_DIR/dependencies"
+  - MODULE_NAME=transmittools REPOSITORY_DIR="$TRAVIS_BUILD_DIR" DEPENDENCIES="$TRAVIS_BUILD_DIR/dependencies"
     GARRYSMOD_COMMON="$TRAVIS_BUILD_DIR/dependencies/garrysmod_common" SOURCE_SDK="$TRAVIS_BUILD_DIR/dependencies/sourcesdk-minimal"
     TARGET_OS="$TRAVIS_OS_NAME" COMPILER_PLATFORM=gmake BUILD_SCRIPT="$TRAVIS_BUILD_DIR/dependencies/garrysmod_common/build/ci.sh"
     GARRYSMOD_COMMON_REPOSITORY="https://github.com/danielga/garrysmod_common.git"
