@@ -17,7 +17,7 @@ end
 
 include(gmcommon)
 
-CreateWorkspace({name = "query", allow_debug = false})
+CreateWorkspace({name = "transmittools", allow_debug = false})
 	filter("system:macosx")
 		buildoptions("-mmacosx-version-min=10.5")
 		linkoptions("-mmacosx-version-min=10.5")
