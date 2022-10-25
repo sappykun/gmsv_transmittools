@@ -1,3 +1,6 @@
+PROJECT_GENERATOR_VERSION = 2
+
+
 if os.istarget("linux") then
 	print("WARNING: The only supported compilation platforms (tested) for this project on Linux are GCC/G++ 4.8 or 4.9. However, any version between 4.4 and 4.9 *MIGHT* work.")
 elseif os.istarget("macosx") then
@@ -22,7 +25,7 @@ CreateWorkspace({name = "transmittools", allow_debug = false})
 		buildoptions("-mmacosx-version-min=10.5")
 		linkoptions("-mmacosx-version-min=10.5")
 
-	CreateProject({serverside = true})
+	CreateProject({serverside = true, source_path = "gm_transmittools", manual_files = false})
 		warnings("Default")
 		IncludeSDKCommon()
 		IncludeSDKTier0()
@@ -30,3 +33,4 @@ CreateWorkspace({name = "transmittools", allow_debug = false})
 		IncludeSteamAPI()
 		IncludeDetouring()
 		IncludeScanning()
+

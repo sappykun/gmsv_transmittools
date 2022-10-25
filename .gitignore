@@ -1,4 +1,5 @@
 /dependencies
+/garrysmod_common
 /projects
 premake5
 libluasocket.so
