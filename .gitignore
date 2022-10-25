@@ -1,0 +1,5 @@
+/dependencies
+/projects
+premake5
+libluasocket.so
+example.so
